@@ -1,7 +1,7 @@
 // problem-1
 
 const filterEvenNumbers = (values: number[]): number[] => {
-  const number = values.filter((value) => value % 2 == 0);
+  const number = values.filter((value) => value % 2 === 0);
   return number;
 };
 
