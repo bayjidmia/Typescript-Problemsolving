@@ -14,9 +14,9 @@ const reverseString = (values: string): string => {
 // problem3
 const checkType = (value: string | number): string => {
   if (typeof value === "string") {
-    return "string";
+    return "String";
   } else {
-    return "number";
+    return "Number";
   }
 };
 
