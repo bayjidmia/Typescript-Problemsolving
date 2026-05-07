@@ -21,13 +21,13 @@ const checkType = (value: string | number): string => {
 };
 
 // problem-4
-type Obj = {
+type User = {
   id: number;
   name: string;
   age: number;
 };
 
-const getProperty = <T extends Obj, K extends keyof T>(
+const getProperty = <T extends User, K extends keyof T>(
   value: T,
   key: K,
 ): T[K] => {
