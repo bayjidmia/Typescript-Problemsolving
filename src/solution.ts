@@ -20,5 +20,16 @@ const checkType = (value: string | number): string => {
   }
 };
 
-const check = checkType("123");
-console.log(check);
+// problem-4
+type Obj = {
+  id: number;
+  name: string;
+  age: number;
+};
+
+const getProperty = <T extends Obj, K extends keyof T>(
+  value: T,
+  key: K,
+): T[K] => {
+  return value[key];
+};
